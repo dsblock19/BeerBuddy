@@ -6,7 +6,7 @@ import time
 import board
 from adafruit_onewire.bus import OneWireBus
 from adafruit_ds18x20 import DS18X20
-from digitalio import DigitalInOut, Direction, Pull
+from digitalio import DigitalInOut, Direction
 
 
 '''SETUP'''
@@ -33,7 +33,6 @@ coolPin.direction = Direction.OUTPUT
 
 '''LOOP'''
 
-# Main loop to print the temperature every second.
 while True:
     temp = ds18.temperature
 
